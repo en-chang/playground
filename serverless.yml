@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: playground
+service: rankly-lambda
 # app and org for use with dashboard.serverless.com
 #app: your-app-name
 #org: your-org-name
@@ -26,7 +26,7 @@ provider:
   lambdaHashingVersion: 20201221
 
 # you can overwrite defaults here
-#  stage: dev
+  stage: dev
 #  region: us-east-1
 
 # you can add statements to the Lambda function's IAM Role here
@@ -58,15 +58,15 @@ provider:
 #    - include-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
+  rank:
+    handler: handler.rank
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
-#    events:
-#      - httpApi:
-#          path: /users/create
-#          method: get
+    events:
+       - httpApi:
+          path: /rank
+          method: get
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)

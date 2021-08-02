@@ -161,7 +161,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/rankly-lambda/prod/1627959198290-2021-08-03T02:53:18.290Z/rankly-lambda.zip"
+          "S3Key": "serverless/rankly-lambda/prod/1627960566575-2021-08-03T03:16:06.575Z/rankly-lambda.zip"
         },
         "Handler": "handler.rank",
         "Runtime": "nodejs12.x",
@@ -179,14 +179,14 @@
         "RankLogGroup"
       ]
     },
-    "RankLambdaVersionv1fVwEcQ1WhdCukFSySZaPRMNKpQZ8kRcykxrMVeuA": {
+    "RankLambdaVersionUR5fGu4oqNGmYUSP0QUOhBb16OLDNwWZnmWHmTkRU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "RankLambdaFunction"
         },
-        "CodeSha256": "YLBPZfItgmJpbDk3SZoCZJi+AZ7E95WLqN8AJ5ty9Rk="
+        "CodeSha256": "N+s4mvLn1IkNVHkcaUbGTsneiSoJpVlcD+ZoCqIDKfg="
       }
     },
     "HttpApi": {
@@ -297,7 +297,7 @@
     "RankLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "RankLambdaVersionv1fVwEcQ1WhdCukFSySZaPRMNKpQZ8kRcykxrMVeuA"
+        "Ref": "RankLambdaVersionUR5fGu4oqNGmYUSP0QUOhBb16OLDNwWZnmWHmTkRU"
       },
       "Export": {
         "Name": "sls-rankly-lambda-prod-RankLambdaFunctionQualifiedArn"

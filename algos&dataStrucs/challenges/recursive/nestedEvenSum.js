@@ -1,7 +1,8 @@
-function nestedEvenSum () {
+// I have no idea what this one is asking me to do
+
+function nestedEvenSum (obj) {
   // add whatever parameters you deem necessary - good luck!
 }
-
 
 var obj1 = {
   outer: 2,
@@ -23,5 +24,5 @@ var obj2 = {
   e: {e: {e: 2}, ee: 'car'}
 };
 
-nestedEvenSum(obj1); // 6
-nestedEvenSum(obj2); // 10
+console.log(nestedEvenSum(obj1)); // 6
+console.log(nestedEvenSum(obj2)); // 10

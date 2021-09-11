@@ -1,7 +1,14 @@
-// I have no idea what this one is asking me to do
+// if callback(arr.pop())
+  // return true
+// return someRecursive(arr, callback)
 
-function someRecursive(arr, callback){
-  // add whatever parameters you deem necessary - good luck!
+function someRecursive(arr, callback) {
+  if (callback(arr.pop())) {
+    return true;
+  } else if (arr.length === 0) {
+    return false;
+  }
+  return someRecursive(arr, callback);
 }
 
 // SAMPLE INPUT / OUTPUT
